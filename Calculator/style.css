@@ -1,0 +1,72 @@
+.calculator {
+    width: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #646161;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+.number, #decimal{
+    background-color: rgb(44, 43, 43);
+    color:white;
+    
+}
+
+.other{
+    background-color: gray;
+}
+
+.operator{
+    background-color: orange
+}
+
+#zero{
+    grid-column: span 2;
+}
+
+#display {
+    width: 92%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    color:white;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 100px;
+    background-color: #110707;
+    cursor: pointer;
+
+}
+
+.operator:hover{
+    background-color:rgb(216, 174, 96)
+}
+.other:hover{
+    background-color:rgb(223, 218, 208)
+}
+.number:hover,#decimal:hover {
+    background-color: #423f3f;
+}
+
+button:active {
+    background-color: #aaa;
+}
